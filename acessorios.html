@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessórios - Alpha Street</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Botão do Menu -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span class="logo-text">Sua Loja</span>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <!-- Menu Lateral -->
+    <div class="side-menu" id="side-menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="camisas.html">Camisas</a></li>
+            <li><a href="tenis.html">Tênis</a></li>
+            <li><a href="calcas.html">Calças</a></li>
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="sobre.html">Sobre</a></li> <!-- Adicionando o link "Sobre" -->
+        </ul>
+    </div>
+
+    <h1>Acessórios</h1>
+    <div class="product-container">
+        <div class="product-item">
+            <a href="acessorio1.html">
+                <img src="img/acessorio1.jpg" alt="Acessório 1">
+                <h2>Acessório 1</h2>
+                <p>R$ 19,90</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="acessorio2.html">
+                <img src="img/acessorio2.jpg" alt="Acessório 2">
+                <h2>Acessório 2</h2>
+                <p>R$ 29,90</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.querySelector('.side-menu');
+            menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
